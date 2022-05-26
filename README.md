@@ -1,2 +1,2 @@
 # subreddit-game
-Website
+Website. Currently not usable.
