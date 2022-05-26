@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124913111-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-124913111-2');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Icon-->
+    <link rel="icon" href="img/icon2.png">
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Flat UI-->
+    <link href="dist/css/flat-ui.css" rel="stylesheet">
+    <link href="docs/assets/css/demo.css" rel="stylesheet">
+    <!--SASS-->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- JS -->
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <!-- <ul id="subreddit-sidelist">
+        <li></li>
+    </ul> -->
+    <div id="page-container">
+        <div id="content-wrap" class="container">
+            <div id="various-info">
+                <form id="start-game" class="start-screen">
+                    <img src="img/icon2.png" class="img-fluid"></img>
+                    <h4>Welcome to the Subreddit game!</h4>
+                    <div>
+                        <button id="start-button" type="submit">START</button>
+                    </div>
+                    <p>
+                        After clicking start, you will see a Reddit post's title and content. Your goal is to guess in
+                        which
+                        subreddit
+                        it was posted
+                        <br>
+                        If you're not familiar with Reddit, check out its <a href="https://en.wikipedia.org/wiki/Reddit"
+                            target="_blank" rel="noopener noreferrer">Wikipedia page</a> or the <a
+                            href="https://www.reddit.com" target="_blank" rel="noopener noreferrer">website
+                            itself</a>!
+
+
+                    </p>
+                </form>
+                <div id="in-game" class="hidden">
+                    <!--Title-->
+                    <h4 id="title"></h4>
+                    <!--IMG-->
+                    <a href="" target="_blank" id="img-url" rel="noopener noreferrer"><img id="img-content" src=""
+                            class="hidden" title="Click to view full size image"></a>
+                    <img id="img-content-preload" src="" class="hidden">
+                    <!--VIDEO-->
+                    <a href="" target="_blank" id="video-url" rel="noopener noreferrer"><video autoplay controls loop
+                            id="video-content" class="hidden" title="Click to view full size video/gif">
+                            <source id="video-content-src" src="">
+                        </video></a>
+                    <video id="video-content-preload" class="hidden">
+                        <source id="video-content-src-preload" src="">
+                    </video>
+                    <!--GUESS TEXT-->
+                    <form autocomplete="off" id="next-form">
+                        Your guess:&nbsp;&nbsp;&nbsp;<strong>reddit.com/r/</strong>
+                        <div class="autocomplete">
+                            <input type="text" id="next-text" class="form-control flat" placeholder="Example: funny"
+                                size="" value="">
+                        </div>
+                        <button id="next-button" class="btn btn-default btn-wide btn-reduce-on-xs" type="submit">Check
+                            and
+                            go
+                            next</button>
+                    </form>
+                    <br>
+                    <button id="first-letter-reveal" onclick="revealFirstLetter()">Reveal first letter (<span
+                            id="fisrt-letter-hints-left">3</span> left)</button>
+                    <button onclick="subredditListToggle()">Toggle subreddits list</button>
+                    <br><br>
+                    <!--Recap-->
+                    <div id="answer-recap-post-link-summary" class="hidden">
+                        <span id="answer-recap"></span>
+                        - <a id="post-link" href="" target="_blank" rel="noopener noreferrer" class="default-link">View
+                            the post</a> -
+                        <span id="summary"></span><br>
+                    </div>
+                    <p id="note"><strong>note:</strong> only the subreddits that appear in the autocomplete could be the
+                        right
+                        answer!
+                    </p>
+                </div>
+            </div>
+            <!--end game summary-->
+            <p class="end-game hidden" id="end-game"></p>
+            <!--<div id="debug"></div><br>-->
+        </div>
+        <div id="footer" class="hidden">
+            <span id="name" class="footer-piece">
+                Subredditgame <i class="fas fa-circle fa-xs footer-dot"></i>
+            </span>
+            <span id="author" class="footer-piece">
+                a website by <a class="footer-link" href="https://federicosecco.it/en.html" target="_blank"
+                    rel="noopener noreferrer">Federico Secco</a> <i class="fas fa-circle fa-xs footer-dot"></i>
+            </span>
+            <!--<span id="info-page" class="footer-piece">
+                <a class="footer-link" href="about.html">About</a> <i class="fas fa-circle fa-xs footer-dot"></i>
+            </span>-->
+            <span id="mail" class="footer-piece">
+                <a class="footer-link" href="mailto:federico.secco7@gmail.com" target="_blank"
+                    rel="noopener noreferrer">Contact</a> <i class="fas fa-circle fa-xs footer-dot"></i>
+            </span>
+            <span id="donate" class="footer-piece">
+                <a class="footer-link" href="https://paypal.me/subredditgame/3USD" target="_blank"
+                    rel="noopener noreferrer">Donate</a>
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
