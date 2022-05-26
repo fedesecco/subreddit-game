@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/subreddit-game/static/css/main.073c9b0a.css",
+    "main.js": "/subreddit-game/static/js/main.9cc76124.js",
+    "static/js/787.0860c4d2.chunk.js": "/subreddit-game/static/js/787.0860c4d2.chunk.js",
+    "static/media/logo.svg": "/subreddit-game/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/subreddit-game/index.html",
+    "main.073c9b0a.css.map": "/subreddit-game/static/css/main.073c9b0a.css.map",
+    "main.9cc76124.js.map": "/subreddit-game/static/js/main.9cc76124.js.map",
+    "787.0860c4d2.chunk.js.map": "/subreddit-game/static/js/787.0860c4d2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.9cc76124.js"
+  ]
+}
