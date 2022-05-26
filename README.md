@@ -1,2 +1,2 @@
 # subreddit-game
-Website. Currently not usable.
+Web app. Currently not usable.
