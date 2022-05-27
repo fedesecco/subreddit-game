@@ -7,6 +7,7 @@ function App() {
       <header />
       {if (currentGame == 1){
         <Game1 />
+        <Game 2/>
       }}
     </div>
   );
