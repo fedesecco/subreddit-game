@@ -1,3 +1,2 @@
 # subreddit-game
-
-For now, not usable.
+Web app. Currently not usable.
