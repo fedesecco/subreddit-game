@@ -3,12 +3,13 @@ import { Button, Alert, Nav, Navbar, NavDropdown, Container, Offcanvas, Form, Fo
 import './Header.scss';
 
 function Header() {
-    const headerSize = "lg"
+    const headerSize = "lg";
+    const websiteURL = "https://subredditgame.netlify.app/";
     return (
         <div id="Header">
             <Navbar key={headerSize} bg="light" expand={headerSize} className="mb-3" variant="primary">
                 <Container fluid>
-                    <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+                    <Navbar.Brand href={`${websiteURL}`} rel="noreferrer noopener" target="_blank" >Subreddit game</Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${headerSize}`} />
                     <Navbar.Offcanvas
                         id={`offcanvasNavbar-expand-${headerSize}`}
@@ -38,15 +39,6 @@ function Header() {
                                     </NavDropdown.Item>
                                 </NavDropdown>
                             </Nav>
-                            <Form className="d-flex">
-                                <FormControl
-                                    type="search"
-                                    placeholder="Search"
-                                    className="me-2"
-                                    aria-label="Search"
-                                />
-                                <Button variant="outline-success">Search</Button>
-                            </Form>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
                 </Container>
