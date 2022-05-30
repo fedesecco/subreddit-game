@@ -7,7 +7,7 @@ function Header() {
     const websiteURL = "https://subredditgame.netlify.app/";
     return (
         <div id="Header">
-            <Navbar key={headerSize} bg="light" expand={headerSize} className="mb-3" variant="primary">
+            <Navbar key={headerSize} bg="light" expand={headerSize} className="mb-4" variant="primary" fixed="top">
                 <Container fluid>
                     <Navbar.Brand href={`${websiteURL}`} rel="noreferrer noopener" target="_blank" >Subreddit game</Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${headerSize}`} />
