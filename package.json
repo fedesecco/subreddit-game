@@ -2,6 +2,7 @@
   "name": "robofriends",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://fedesecco.github.io/subreddit-game/",
   "dependencies": {
     "bootstrap": "^5.1.3",
     "react": "^17.0.2",
