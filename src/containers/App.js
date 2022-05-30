@@ -1,17 +1,14 @@
 import React from 'react';
 import Header from '../components/Header';
-import Button from "react-bootstrap/Button";
-import Alert from 'react-bootstrap/Alert';
-
-import './App.css';
+import { Button, Alert } from 'react-bootstrap';
+import './App.scss';
 
 
 const App = () => {
   return (
     <div>
       <Header />
-      <Button variant="primary">Primary</Button>
-      <Alert key="primary" variant="primary">
+      <Alert className="tc" key="primary" variant="primary">
         This is a primary alert—check it out!
       </Alert>
     </div>
