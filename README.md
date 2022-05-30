@@ -1,7 +1,4 @@
-# robofriends
-Tutorial for React
-To run the project:
+# The subreddit game!
+Currently not functional.
 
-1. Clone this repo
-2. Run `npm install`
-3. Run `npm start`
+A random subreddit content (title and image/video) is shown. Guess in what subreddit it was posted!
