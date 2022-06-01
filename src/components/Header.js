@@ -23,8 +23,13 @@ function Header() {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link href="#action1">Home</Nav.Link>
-                                <Nav.Link href="#action2">Link</Nav.Link>
+                                {/* <NavDropdown title="Account-name" id={`offcanvasNavbarDropdown-expand-${headerSize}`}>
+                                    <NavDropdown.Item href="#action3">Profile</NavDropdown.Item>
+                                    <NavDropdown.Divider />
+                                    <NavDropdown.Item href="#action4">Logout/Login/Register</NavDropdown.Item>
+                                </NavDropdown> */}
+                                <Nav.Link href="#action1">Account-name</Nav.Link>
+                                <Nav.Link href="#action1">Logout/Login</Nav.Link>
                                 <NavDropdown
                                     title="Dropdown"
                                     id={`offcanvasNavbarDropdown-expand-${headerSize}`}

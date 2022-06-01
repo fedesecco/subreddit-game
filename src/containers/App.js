@@ -10,7 +10,7 @@ const App = () => {
       <Header />
       <Container className="mt-5 pb-3"></Container>
       <Alert className="tc" key="primary" variant="primary">
-        This is a primary alert—check it out!
+        Test allerta
       </Alert>
     </div>
   );
