@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Alert, Nav, Navbar, NavDropdown, Container, Offcanvas, Form, FormControl } from 'react-bootstrap';
 import './Header.scss';
+import subredditGameLogo from '../img/icon2.png';
 
 function Header() {
     const headerSize = "lg";
@@ -9,6 +10,9 @@ function Header() {
         <div id="Header">
             <Navbar key={headerSize} bg="light" expand={headerSize} className="mb-4" variant="primary" fixed="top">
                 <Container fluid>
+                    <Navbar.Brand href={`${websiteURL}`}>
+                        <img src={subredditGameLogo} width="30" height="30" className="d-inline-block align-top" alt="Subreddit game logo" />
+                    </Navbar.Brand>
                     <Navbar.Brand href={`${websiteURL}`} rel="noreferrer noopener" target="_blank" >Subreddit game</Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${headerSize}`} />
                     <Navbar.Offcanvas
