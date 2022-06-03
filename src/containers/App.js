@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import { Button, Alert, Container } from 'react-bootstrap';
 import './App.scss';
 
-
+const testVariable = "TEST";
 const App = () => {
   return (
     <div>

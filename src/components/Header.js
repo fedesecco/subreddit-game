@@ -38,9 +38,9 @@ function Header() {
                                     <NavDropdown.Item href="#action3">Profile</NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item href="#action4">Logout/Login/Register</NavDropdown.Item>
-                                </NavDropdown> */}
+                                </NavDropdown> 
                                 <Nav.Link href="#action1">Account-name</Nav.Link>
-                                <Nav.Link href="#action1">Logout/Login</Nav.Link>
+                                <Nav.Link href="#action1">Logout/Login</Nav.Link>*/}
                                 <NavDropdown title={currentGame} id={`offcanvasNavbarDropdown-expand-${headerSize}`}>
                                     <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                                     <NavDropdown.Item href="#action4">
