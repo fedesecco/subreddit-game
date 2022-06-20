@@ -26,17 +26,5 @@ function App() {
   );
 }
 
-/* const App = () => {
-  return (
-    <div>
-      <Header />
-      <Container className="mt-5 pb-3"></Container>
-      <Alert className="tc" key="primary" variant="primary">
-        Test allerta
-      </Alert>
-    </div>
-  );
-} */
-
 
 export default App;
