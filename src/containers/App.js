@@ -5,13 +5,15 @@ import './App.scss';
 
 function App() {
   const serverURL = 'https://lit-garden-12978.herokuapp.com/';
-  const [robots, setRobots] = useState([])
+  const testURL = 'https://jsonplaceholder.typicode.com/users';
+  const [users, setUsers] = useState([]);
 
-  /*   useEffect(() => {
-      fetch(serverURL)
-        .then(response => response.json())
-        .then(users => { setRobots(users) });
-    }, []) */
+  useEffect(()=> {
+    fetch(testURL)
+      .then(response=> response.json())
+      .then(users => {setUsers(users)});
+      // console.log(users);
+  },[])
 
   return (
     <div>
