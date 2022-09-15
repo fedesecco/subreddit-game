@@ -3,8 +3,8 @@ import { StatusCodes } from "http-status-codes"
 const erroreHandlerMiddleWare = (err,req,res,next) => {
     console.log(err)
     const defaultError = {
-        statusCode:StatusCodes.INTERNAL_SERVER_ERROR,
-        msg:"Something went wrong"
+        statusCode: err.statusCode || StatusCodes.INTERNAL_SERVER_ERROR,
+        msg: err.message || "Something went wrong"
     }
     if (err.name === "ValidationError"){
         defaultError.statusCode = StatusCodes.BAD_REQUEST
