@@ -40,7 +40,7 @@ const AppProvider = ({children}) =>{
             dispatch({type:REGISTER_USER_SUCCESS, payload: {user, token, location},})
         } catch (error) {
             console.log(error.response);
-            dispatch({type:REGISTER_USER_ERROR, payload: {msg: error.response.data.message},})
+            dispatch({type:REGISTER_USER_ERROR, payload: {msg: error.response.data.msg},})
         }
         clearAlert()
     }
