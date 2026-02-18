@@ -44,6 +44,7 @@
       "inputs": ["default", "^production"]
     }
   },
+  "useDaemonProcess": false,
   "release": {
     "projects": ["api"],
     "projectsRelationship": "independent",

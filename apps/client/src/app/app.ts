@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
+import { JsonPipe } from '@angular/common';
+import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcome } from './nx-welcome';
+import { DataServce } from '@services/data.sevice';
 
 @Component({
-  imports: [NxWelcome, RouterModule],
+  imports: [RouterModule, JsonPipe],
   selector: 'sr-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
 export class App {
-  protected title = 'client';
+  protected readonly dataService = inject(DataServce);
 }
