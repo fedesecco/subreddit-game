@@ -1,10 +1,9 @@
-import { JsonPipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { DataServce } from '@services/data.sevice';
+import { DataServce } from '@services/data.service';
 
 @Component({
-  imports: [RouterModule, JsonPipe],
+  imports: [RouterModule],
   selector: 'sr-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',

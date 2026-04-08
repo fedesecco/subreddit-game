@@ -1,7 +1,3 @@
 <router-outlet></router-outlet>
 
 {{ dataService.posts.status() }}
-
-@if (dataService.posts.hasValue()) {
-  {{ dataService.posts.value()[0] | json }}
-}
