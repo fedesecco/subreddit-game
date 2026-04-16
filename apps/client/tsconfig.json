@@ -7,17 +7,16 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "isolatedModules": true,
-    "baseUrl": ".",
     "target": "es2022",
     "lib": ["es2022", "dom"],
     "moduleResolution": "bundler",
     "emitDecoratorMetadata": false,
     "module": "preserve",
     "paths": {
-      "@common/*": ["src/app/common/*"],
-      "@models/*": ["src/app/models/*"],
-      "@services/*": ["src/app/services/*"],
-      "@views/*": ["src/app/views/*"]
+      "@common/*": ["./src/app/common/*"],
+      "@models/*": ["./src/app/models/*"],
+      "@services/*": ["./src/app/services/*"],
+      "@views/*": ["./src/app/views/*"]
     }
   },
   "angularCompilerOptions": {
