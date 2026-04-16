@@ -1,5 +1,6 @@
-import { effect, Injectable, resource } from '@angular/core';
+import { effect, inject, Injectable, resource } from '@angular/core';
 import { RedditPost } from '@models/post';
+import { LoggerService } from './logger.service';
 
 type PostsResponse = {
   count: number;
@@ -12,6 +13,8 @@ const DEV_API_ORIGIN = 'http://localhost:3000';
 
 @Injectable({ providedIn: 'root' })
 export class DataServce {
+  private readonly logger = inject(LoggerService);
+
   public readonly posts = resource({
     defaultValue: [],
     loader: async ({ abortSignal }) => {
@@ -31,9 +34,9 @@ export class DataServce {
   constructor() {
     effect(() => {
       if (this.posts.hasValue()) {
-        console.log('posts changed: ', this.posts.value());
+        this.logger.debug(this, 'posts changed: ', this.posts.value());
       } else if (this.posts.error()) {
-        console.log('posts error: ', this.posts.error());
+        this.logger.debug(this, 'posts error: ', this.posts.error());
       }
     });
   }
